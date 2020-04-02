@@ -106,6 +106,7 @@
 @media(max-width: 444px) {
     .GroceryItem { 
         max-width: 85%; 
+        height: 70px;
         min-height: 70px;
     }
     .GroceryItem:hover { transform: scale(1.05) translate(-5%); }
