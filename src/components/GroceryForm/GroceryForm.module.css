@@ -1,0 +1,98 @@
+.GroceryForm {
+    width: 98%;
+    height: 100px;
+    padding: 10px 30px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgba(102,102,102, 0.2);
+    border-radius: 16px;
+}
+
+.Row__1, .Row__2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Row__1 { margin-bottom: 5px; }
+
+.Name, .Price, .Remarks {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.GroceryForm input {
+    width: 100%;
+    margin-right: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 7px 15px;
+    color: #eee;
+    background: inherit;
+    border: 2px solid rgba(102,102,102, 0.2);
+    border-radius: 15px;
+    outline: none;
+    box-shadow: none;
+}
+.GroceryForm input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+    opacity: 1; /* Firefox */
+}
+.GroceryForm input:-ms-input-placeholder { color: #ccc; }
+.GroceryForm input::-ms-input-placeholder { color: #ccc; }
+
+.GroceryForm input::-webkit-outer-spin-button,
+.GroceryForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.GroceryForm input[type=number] { -moz-appearance: textfield; }
+
+.Button {
+    min-width: 160px;
+    border: none;
+    color: #fff;
+    padding: 9px 17px;
+    margin: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid transparent;
+    border-radius: 90px;
+    
+    font-weight: 300;
+    transition: background-color 0.2s;
+}
+.Button:focus { outline: none; }
+.Button:hover {
+    border: 2px solid #ccc;
+    background-color: transparent;
+}
+
+@media(max-width: 724px) {
+    .Button {
+        min-width: 130px;
+    }
+}
+@media(max-width: 600px) {
+    .Name, .Price, .Remarks {
+        font-size: 18px;
+        padding: 0 6px;
+    }
+    .Button {
+        min-width: 100px;
+        padding: 9px 10px;
+    }
+}
+@media(max-width: 444px) {
+    .GroceryForm { padding: 10px; }
+    .Name, .Price, .Remarks {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+    .GroceryForm input { 
+        font-size: 14px; 
+        margin-right: 6px;
+    }
+    .Button { padding: 6px; }
+}

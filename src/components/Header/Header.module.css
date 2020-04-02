@@ -1,0 +1,16 @@
+.Header {
+    width: 100%;
+    height: 60px;
+    padding: 15px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    color: #eee;
+    
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 444px) {
+    .Header { padding:  15px 20px; }
+}

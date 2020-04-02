@@ -1,0 +1,121 @@
+.GroceryItem {
+    max-width: 800px;
+    height: 85px;
+    margin: 5px auto;
+    
+    display: flex;
+    align-items: stretch;
+    transition: all 0.3s;
+}
+.GroceryItem:hover {
+    transform: scale(1.07);
+    height: auto;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.Data {
+    width: 100%;
+    height: inherit;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.2);
+    
+    display: flex;
+    align-items: stretch;
+}
+
+.Content {
+    width: calc(100% - 50px);
+    padding: 10px 30px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.Name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.Remarks {
+    font-size: 15px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.Price {
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+    writing-mode: vertical-rl;
+    padding: 5px 0;
+    color: white;
+    font-size: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Delete {
+    width: 40px;
+    padding-left: 10px;
+    margin-right: -50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+    display: none;
+}
+.Delete img {
+    width: 40px;
+    height: 40px;
+}
+.Delete:hover { transform: scale(1.1); }
+
+.GroceryItem:hover .Delete { display: flex; }
+
+.Delete:hover .GroceryItem {
+    transform: scale(1.07);
+    height: auto;
+}
+
+@media(max-width: 1000px) {
+    .GroceryItem { max-width: 75%; }
+}
+@media(max-width: 724px) {
+    .GroceryItem { max-width: 80%; }
+    .GroceryItem:hover { transform: scale(1.07); }
+    .Delete {
+        width: 35px;
+        padding-left: 10px;
+        margin-right: -45px;
+    }
+    .Delete img {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media(max-width: 444px) {
+    .GroceryItem { 
+        max-width: 85%; 
+        min-height: 70px;
+    }
+    .GroceryItem:hover { transform: scale(1.05) translate(-5%); }
+
+    .Delete {
+        width: 30px;
+        padding-left: 10px;
+        margin-right: -45px;
+    }
+    .Delete img {
+        width: 30px;
+        height: 30px;
+    }
+}
