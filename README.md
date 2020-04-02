@@ -4,10 +4,23 @@ React Grocery List is a design of shopping list developed using React js. It is 
 ## UI
 #### [LIVE DEMO](https://grocerylist-reactapp.herokuapp.com/)
 ![Application's User Interface](./temporary/github_photo.PNG)
+<hr>
 
+### UI Description
+  * Responsive UI
+  * Optimized for mobile screen
+  * Items can be added to a shopping list
+  * Items can be removed from shopping list
+  * User friendly design
 
-Grocery list is using redux and react hook's for state managment.
+### Technology Used
+  * React JS
+  * Redux
 
+### Environment installation
+You need to have `Node.js` and `npm` installed on your PC/Mac.
+
+Then just run `npm install` in the project's root.
 
 ## Available Scripts
 
