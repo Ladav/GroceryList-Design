@@ -1,6 +1,7 @@
 .GroceryItem {
     max-width: 800px;
     height: 85px;
+    min-height: 85px;
     margin: 5px auto;
     
     display: flex;
